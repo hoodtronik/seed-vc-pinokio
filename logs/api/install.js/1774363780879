@@ -1,0 +1,14 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8037]
+(c) Microsoft Corporation. All rights reserved.
+
+F:\pinokio\api\Seed-VC.git>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base && git clone https://github.com/Plachtaa/seed-vc app
+Cloning into 'app'...
+remote: Enumerating objects: 907, done.
+remote: Counting objects: 100% (420/420), done.
+remote: Compressing objects: 100% (148/148), done.
+remote: Total 907 (delta 324), reused 272 (delta 272), pack-reused 487 (from 1)
+Receiving objects: 100% (907/907), 66.26 MiB | 1.72 MiB/s, done.
+Resolving deltas: 100% (473/473), done.
+
+(base) F:\pinokio\api\Seed-VC.git>

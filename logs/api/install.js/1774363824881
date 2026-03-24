@@ -1,0 +1,8 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8037]
+(c) Microsoft Corporation. All rights reserved.
+
+F:\pinokio\api\Seed-VC.git\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & python -m venv F:\pinokio\api\Seed-VC.git\app\env & F:\pinokio\api\Seed-VC.git\app\env\Scripts\activate F:\pinokio\api\Seed-VC.git\app\env & F:\pinokio\api\Seed-VC.git\app\env\Scripts\deactivate & F:\pinokio\api\Seed-VC.git\app\env\Scripts\activate F:\pinokio\api\Seed-VC.git\app\env && uv pip install -r requirements.txt --index-strategy unsafe-best-match
+error: Expected `--hash`, found `"--pre"` at requirements.txt:1:7
+
+(env) (base) F:\pinokio\api\Seed-VC.git\app>
