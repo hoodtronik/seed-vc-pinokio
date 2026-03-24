@@ -16,8 +16,8 @@ module.exports = {
       venv: "env",
       path: "app",
       message: [
-        "python -c \"lines = [l for l in open('requirements.txt') if '--pre' not in l]; open('requirements.txt', 'w').writelines(lines)\"",
-        "python -c \"t=open('app.py').read(); t=t.replace('dtype = torch.float16', 'dtype = torch.float32'); open('app.py','w').write(t)\"",
+        "python -c \"lines = [l for l in open('requirements.txt', encoding='utf-8') if '--pre' not in l]; open('requirements.txt', 'w', encoding='utf-8').writelines(lines)\"",
+        "python -c \"t=open('app.py', encoding='utf-8').read(); t=t.replace('dtype = torch.float16', 'dtype = torch.float32'); open('app.py','w', encoding='utf-8').write(t)\"",
         "uv pip install -r requirements.txt"
       ]
     }
