@@ -15,7 +15,10 @@ module.exports = {
     params: {
       venv: "env",
       path: "app",
-      message: "uv pip install -r requirements.txt"
+      message: [
+        "python -c \"lines = [l for l in open('requirements.txt') if '--pre' not in l]; open('requirements.txt', 'w').writelines(lines)\"",
+        "uv pip install -r requirements.txt"
+      ]
     }
   }]
 }
